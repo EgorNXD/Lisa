@@ -28,9 +28,9 @@ def Triangle(x, y, size, angle):
 
   """
   Draws triangle.
-  x,y - start coordinates,
-  size - size of the triangle
-  angle - turning angle
+  x, y - start coordinates,
+  size - size of the triangle,
+  angle - turning angle.
   """
   pass
 
@@ -53,7 +53,7 @@ def Tail(x, y, size):
 
   """
   Draws triangle-tail.
-  x, y - start coordinates.
+  x, y - start coordinates,
   size - size of the triangle.
   """
   pass
@@ -72,8 +72,8 @@ def Circle(x, y, size, color):
 
   """
   Draws circle.
-  x,y - start coordinates.
-  size - size of the radius of the circle.
+  x,y - start coordinates,
+  size - size of the radius of the circle,
   color - color of filling.
   """
   pass
@@ -93,8 +93,8 @@ def Smile(x, y, size, width):
 
   """
   Draws half circle.
-  x, y - start coordinates.
-  size - size of radius of the half circle.
+  x, y - start coordinates,
+  size - size of radius of the half circle,
   color - color of filling.
   """
   pass
@@ -142,3 +142,4 @@ Rec(-250, -100, 225, 50, "white")
 t.up()
 t.home()
 turtle.done()
+
