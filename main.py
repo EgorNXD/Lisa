@@ -5,3 +5,8 @@ def Circle():
   :return:
   """
   pass
+
+def Triangle():
+  '''function returns rtiangle/
+  : '''
+  pass
