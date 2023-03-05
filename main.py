@@ -5,7 +5,7 @@ def Circle():
   :return:
   """
   pass
-import turtle as t
+import turtle as tr
 
 def Triangle():
   '''function returns rtiangle/
