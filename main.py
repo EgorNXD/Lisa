@@ -5,7 +5,7 @@ Salary:
 import turtle
 
 t = turtle.Turtle()
-t.speed(2)
+t.speed(200)
 t.width(2)
 t.pencolor("black")
 
@@ -93,7 +93,7 @@ def Smile(x, y, size, width):
 
   """
   Draws half circle.
-  x,y - start coordinates.
+  x, y - start coordinates.
   size - size of radius of the half circle.
   color - color of filling.
   """
@@ -115,18 +115,39 @@ def Rec(x, y, a, b, color):
   t.seth(0)
   """
   Draws rectangle.
-  x,y - start coordinates.
-  a,b - sides length.
+  x, y - start coordinates.
+  a, b - sides length.
   color - color of filling.
   """
   pass
 
+#Начало
+Triangle(0,-200,2,0)
+Tail(205,-185,7)
+Triangle(115, 90, 1.7, 235)
+Triangle(70, 155, 0.5, 55)
+Triangle(31, 210, 0.5, 55)
+Circle(45, 106, 15, "aquamarine")
+Circle(35, 115, 5, "black")
+Circle(-5, 155, 15, "aquamarine")
+Circle(-15, 164, 5, "black")
+Circle(-128, 20, 8, "red")
+Circle(-165, 40, 80, "beige")
+Smile(-135, 90, 30, 5)
+Circle(-130, 120, 13, "blue")
+Circle(-200, 120, 13, "blue")
+Rec(-250,-200,225,50,'red')
+Rec(-250,-150,225,50,'blue')
+Rec(-250,-100,225,50,'white')
+t.up()
+t.home()
 
 
 #Test zone
-#Triangle(0,0,1,0)
+#Triangle(0,0,2,0)
 #Tail(100,0,3)
 #Smile(0,0,100,5)
-#Circle(0,50,50,"red")
+#Circle(0,0,50,"red")
 #Rec(0,0,100,50,"yellow")
+
 turtle.done()
