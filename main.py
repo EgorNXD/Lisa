@@ -115,8 +115,8 @@ def Rec(x, y, a, b, color):
   t.seth(0)
   """
   Draws rectangle.
-  x, y - start coordinates.
-  a, b - sides length.
+  x, y - start coordinates,
+  a, b - sides length,
   color - color of filling.
   """
   pass
