@@ -11,6 +11,7 @@ t.pencolor("black")
 
 #Main triangle
 def Triangle(x,y,size,angle):
+
   t.up()
   t.fillcolor("orange")
   t.goto(x,y)
@@ -25,6 +26,7 @@ def Triangle(x,y,size,angle):
   t.forward(146.1902*size)
   t.seth(0)
   t.end_fill()
+
   """
   Draws triangle.
   x,y - start coordinates,
@@ -36,6 +38,7 @@ def Triangle(x,y,size,angle):
 
 #Tail triangle
 def Tail(x,y,size):
+
   t.up()
   t.fillcolor("orange")
   t.goto(x,y)
@@ -50,6 +53,7 @@ def Tail(x,y,size):
   t.forward(28.7939*size)
   t.seth(0)
   t.end_fill()
+
   """
   Draws triangle-tail.
   x,y - start coordinates.
@@ -60,6 +64,7 @@ def Tail(x,y,size):
 
 #Circle
 def Circle(x,y, size, color):
+
   t.up()
   t.goto(x, y)
   t.fillcolor(color)
