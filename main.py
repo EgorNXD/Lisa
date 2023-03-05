@@ -1,64 +1,88 @@
-import turtle
-import turtle as t
+"""
+Salary:
+"""
 
+import turtle
 
 t = turtle.Turtle()
-t.speed(1)
+t.speed(2)
 t.pencolor("black")
 
-def Triangle1(x,y,size,angle):
+
+#Main triangle
+def Triangle(x,y,size,angle):
   t.up()
   t.fillcolor("orange")
   t.goto(x,y)
   t.right(angle)
   t.down()
+
   t.begin_fill()
   t.forward(100*size)
   t.left(110)
-  t.forward(146*size)
+  t.forward(146.1902*size)
   t.left(140)
-  t.forward(146*size)
+  t.forward(146.1902*size)
+  t.seth(0)
   t.end_fill()
-
-
   """
-  Function draws Triangle1.
+  Draws triangle.
+  x,y - start coordinates,
+  size - size of the triangle
+  angle - turning angle
   """
   pass
 
-#Triangle1(0,0,2,0)
 
-def Triangle2(x,y,size):
+#Tail triangle
+def Tail(x,y,size):
   t.up()
   t.fillcolor("orange")
   t.goto(x,y)
-  t.left(90)
   t.down()
+
   t.begin_fill()
-  t.forward(100*size)
+  t.left(90)
+  t.forward(28.7939*size)
   t.right(100)
   t.forward(10*size)
-  t.right(85)
-  t.forward(100*size)
+  t.right(100)
+  t.forward(28.7939*size)
+  t.seth(0)
   t.end_fill()
+  """
+  Draws triangle-tail.
+  x,y - start coordinates.
+  size - size of the triangle.
+  """
   pass
-Triangle2(0,0,2)
 
+
+#Circle
 def Circle(x,y, size, color):
   t.up()
   t.goto(x, y)
   t.fillcolor(color)
   t.down()
+
   t.begin_fill()
   t.circle(size)
+  t.seth(0)
   t.end_fill()
 
+  """
+  Draws circle.
+  x,y - start coordinates.
+  size - size of the circle.
+  color - color of filling.
+  """
   pass
 
 
-# Circle(0,0,100,"red")
+#Test zone
+#Triangle(0,0,1,0)
+#Tail(100,0,3)
+#Circle(0,100,50,"red")
 
-
-
-
+turtle.done()
 
