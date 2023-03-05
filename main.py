@@ -121,9 +121,9 @@ def Rec(x, y, a, b, color):
   """
   pass
 
-#Начало
-Triangle(0,-200,2,0)
-Tail(205,-185,7)
+#Painting
+Triangle(0, -200, 2, 0)
+Tail(205, -185, 7)
 Triangle(115, 90, 1.7, 235)
 Triangle(70, 155, 0.5, 55)
 Triangle(31, 210, 0.5, 55)
@@ -136,18 +136,9 @@ Circle(-165, 40, 80, "beige")
 Smile(-135, 90, 30, 5)
 Circle(-130, 120, 13, "blue")
 Circle(-200, 120, 13, "blue")
-Rec(-250,-200,225,50,'red')
-Rec(-250,-150,225,50,'blue')
-Rec(-250,-100,225,50,'white')
+Rec(-250, -200, 225, 50, "red")
+Rec(-250, -150, 225, 50, "blue")
+Rec(-250, -100, 225, 50, "white")
 t.up()
 t.home()
-
-
-#Test zone
-#Triangle(0,0,2,0)
-#Tail(100,0,3)
-#Smile(0,0,100,5)
-#Circle(0,0,50,"red")
-#Rec(0,0,100,50,"yellow")
-
 turtle.done()
