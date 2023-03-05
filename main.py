@@ -113,6 +113,7 @@ def Rec(x, y, a, b, color):
     t.left(90)
   t.end_fill()
   t.seth(0)
+  
   """
   Draws rectangle.
   x, y - start coordinates,
