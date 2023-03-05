@@ -1,15 +1,10 @@
-import turtle
-def Circle():
+import turtle as t
+
+tut = turtle.Turtle()
+def Triangle1(x,y,size):
+
   """
-  Function draws circle.
-  :return:
+  Function draws Triangle1.
   """
   pass
-import turtle as tr
 
-def Triangle():
-  '''function returns rtiangle/
-  : '''
-  pass
-
-#deffdfdf
