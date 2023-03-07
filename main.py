@@ -58,10 +58,11 @@ def Tail(x, y):
   """
   pass
 
+
 # Tree triangle
 def Trtrngl(x, y, scale):
   t.up()
-  t.fillcolor("green")
+  t.fillcolor("forestgreen")
   t.goto(x, y)
   t.down()
   t.begin_fill()
@@ -72,6 +73,13 @@ def Trtrngl(x, y, scale):
   t.forward(100*scale)
   t.end_fill()
   t.seth(0)
+  '''
+  Function draws a green triangle for a tree,
+  x, y - start coordinates,
+  scale - scale of the triangle.
+  '''
+  pass
+
 
 # Circle
 def Circle(x, y, size, color):
@@ -137,8 +145,17 @@ def Rec(x, y, a, b, color):
   pass
 
 # Painting
+Circle(-250, -250, 100, 'YellowGreen')
+Circle(-200, -300, 6, 'Crimson')
+Circle(-218, -200, 6, 'Crimson')
+Circle(-215, -215, 6, 'Crimson')
+Circle(-210, -212, 6, 'Crimson')
+Circle(-212, -226, 6, 'Crimson')
+
+
 turtle.bgcolor('SkyBlue')
 Rec(-1000, -800, 2000, 600, 'green')
+
 Triangle(0, -200, 2, 0)
 Tail(205, -185)
 Triangle(115, 90, 1.7, 235)
@@ -149,19 +166,23 @@ Circle(35, 115, 5, "black")
 Circle(-5, 155, 15, "White")
 Circle(-15, 164, 5, "black")
 Circle(-128, 20, 8, "red")
+
 Circle(-165, 40, 80, "Khaki")
 Smile(-135, 90, 30, 5)
 Circle(-130, 120, 13, "blue")
 Circle(-200, 120, 13, "blue")
+
 Rec(-610, -200, 10, 550, 'silver')
 Circle(-605, 350, 10, 'gold')
 Rec(-600, 200, 225, 50, "red")
 Rec(-600, 250, 225, 50, "blue")
 Rec(-600, 300, 225, 50, "white")
+
 Rec(650, -200, 30, 300, 'brown')
 Trtrngl(665 - 26*5, -150, 5)
 Trtrngl(665 - 26*4, 0, 4)
 Trtrngl(665 - 26*3, 150, 3)
+
 
 t.up()
 t.home()
