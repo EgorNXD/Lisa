@@ -139,7 +139,6 @@ def Rec(x, y, a, b, color):
 # Sun
 Crcl(300, 200, 100, 'Yellow')
 
-
 # Landscape
 turtle.bgcolor('RoyalBlue')
 Rec(-1000, -800, 2000, 600, 'green')
