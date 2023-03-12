@@ -136,7 +136,7 @@ def Rec(x, y, a, b, color):
   '''
   pass
 
-# Rising sun
+# Sun
 Crcl(300, 200, 100, 'Yellow')
 
 
@@ -144,13 +144,17 @@ Crcl(300, 200, 100, 'Yellow')
 turtle.bgcolor('RoyalBlue')
 Rec(-1000, -800, 2000, 600, 'green')
 
-# Tree №1.
+# Trees
 Rec(650, -200, 30, 300, 'brown')
 Trtrngl(665 - 26*5, -150, 5)
 Trtrngl(665 - 26*4, 0, 4)
 Trtrngl(665 - 26*3, 150, 3)
+Rec(-375, -200, 30, 300, 'brown')
+Trtrngl(-360 - 26*5, -150, 5)
+Trtrngl(-360 - 26*4, 0, 4)
+Trtrngl(-360 - 26*3, 150, 3)
 
-# Fox.
+# Fox
 Trngl(0, -200, 2, 0)
 Tail(205, -185)
 Trngl(115, 90, 1.7, 235)
@@ -162,17 +166,11 @@ Crcl(-5, 155, 15, "White")
 Crcl(-15, 164, 5, "black")
 Crcl(-128, 20, 8, "red")
 
-# Kolobok.
+# Kolobok
 Crcl(-165, 40, 80, "Khaki")
 Smile(-135, 90, 30, 5)
 Crcl(-130, 120, 13, "blue")
 Crcl(-200, 120, 13, "blue")
-
-# Tree №2.
-Rec(-375, -200, 30, 300, 'brown')
-Trtrngl(-360 - 26*5, -150, 5)
-Trtrngl(-360 - 26*4, 0, 4)
-Trtrngl(-360 - 26*3, 150, 3)
 
 # Flag
 Rec(-610, -200, 10, 550, 'silver')
@@ -180,7 +178,6 @@ Crcl(-605, 350, 10, 'gold')
 Rec(-600, 200, 225, 50, "red")
 Rec(-600, 250, 225, 50, "blue")
 Rec(-600, 300, 225, 50, "white")
-
 
 t.up()
 t.home()
