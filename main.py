@@ -1,6 +1,6 @@
 """
 Salary: Alexey = 25
-        Yaroslav =
+        Yaroslav = 40
         Egor = 40
 """
 
@@ -26,12 +26,12 @@ def Trngl(x, y, scale, angle):
   t.forward(146.1902*scale)
   t.end_fill()
   t.seth(0)
-  """
+  '''
   Draws orange triangle.
   x, y - start coordinates,
   scale - triangle scale,
   angle - turning angle.
-  """
+  '''
   pass
 
 
@@ -49,10 +49,10 @@ def Tail(x, y):
   t.forward(28.7939*7)
   t.end_fill()
   t.seth(0)
-  """
+  '''
   Draws triangle-tail.
   x, y - start coordinates.
-  """
+  '''
   pass
 
 
@@ -86,12 +86,12 @@ def Crcl(x, y, size, color):
   t.circle(size)
   t.end_fill()
   t.seth(0)
-  """
+  '''
   Draws circle.
   x,y - start coordinates,
   size - size of the radius of the circle,
   color - color of filling.
-  """
+  '''
   pass
 
 
@@ -106,12 +106,12 @@ def Smile(x, y, size, width):
   t.width(2)
   t.pencolor("black")
   t.seth(0)
-  """
+  '''
   Draws red half circle.
   x, y - start coordinates,
   size - size of radius of the half circle,
   width - pen width.
-  """
+  '''
   pass
 
 
@@ -128,27 +128,29 @@ def Rec(x, y, a, b, color):
     t.left(90)
   t.end_fill()
   t.seth(0)
-  """
+  '''
   Draws rectangle.
   x, y - start coordinates,
   a, b - sides length,
   color - color of filling.
-  """
+  '''
   pass
 
-# Bush
-Crcl(-250, -250, 100, 'YellowGreen')
-Crcl(-200, -300, 6, 'Crimson')
-Crcl(-218, -200, 6, 'Crimson')
-Crcl(-215, -215, 6, 'Crimson')
-Crcl(-210, -212, 6, 'Crimson')
-Crcl(-212, -226, 6, 'Crimson')
+# Rising sun
+Crcl(300, 200, 100, 'Yellow')
+
 
 # Landscape
-turtle.bgcolor('SkyBlue')
+turtle.bgcolor('RoyalBlue')
 Rec(-1000, -800, 2000, 600, 'green')
 
-# Fox
+# Tree №1.
+Rec(650, -200, 30, 300, 'brown')
+Trtrngl(665 - 26*5, -150, 5)
+Trtrngl(665 - 26*4, 0, 4)
+Trtrngl(665 - 26*3, 150, 3)
+
+# Fox.
 Trngl(0, -200, 2, 0)
 Tail(205, -185)
 Trngl(115, 90, 1.7, 235)
@@ -160,11 +162,17 @@ Crcl(-5, 155, 15, "White")
 Crcl(-15, 164, 5, "black")
 Crcl(-128, 20, 8, "red")
 
-# Kolobok
+# Kolobok.
 Crcl(-165, 40, 80, "Khaki")
 Smile(-135, 90, 30, 5)
 Crcl(-130, 120, 13, "blue")
 Crcl(-200, 120, 13, "blue")
+
+# Tree №2.
+Rec(-375, -200, 30, 300, 'brown')
+Trtrngl(-360 - 26*5, -150, 5)
+Trtrngl(-360 - 26*4, 0, 4)
+Trtrngl(-360 - 26*3, 150, 3)
 
 # Flag
 Rec(-610, -200, 10, 550, 'silver')
@@ -173,13 +181,9 @@ Rec(-600, 200, 225, 50, "red")
 Rec(-600, 250, 225, 50, "blue")
 Rec(-600, 300, 225, 50, "white")
 
-# Tree
-Rec(650, -200, 30, 300, 'brown')
-Trtrngl(665 - 26*5, -150, 5)
-Trtrngl(665 - 26*4, 0, 4)
-Trtrngl(665 - 26*3, 150, 3)
 
 t.up()
 t.home()
+t.hideturtle()
 turtle.done()
 
