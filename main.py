@@ -1,7 +1,7 @@
 """
-Salary: Alexey = 25
-        Yaroslav = 40
-        Egor = 40
+Salary: Polevik Alexey = 25
+        Elizarev Yaroslav = 40
+        Nechaev Egor = 40
 """
 
 import turtle
